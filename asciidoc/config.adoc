@@ -1,0 +1,2544 @@
+
+= Configs
+
+== *_Multi-layer switch 1_*
+
+==== vlan 999 
+    name SINKHOLE
+
+
+    vlan 100 
+    name NATIVE
+
+    vlan 10 
+    name GEPTERMEK
+
+
+    vlan 20 
+    name MARADEK
+
+
+    vlan 30 
+    name TANARIK
+
+
+    vlan 33 
+    name TREFORT_wi-fi
+
+
+    vlan 44 
+    name GUEST_wi-fi
+
+
+    vlan 50  
+    name SERVER
+
+
+    VLAN 99  
+    name MANAGEMENT 
+
+
+    hostname MLS1
+    
+    
+    enable password alma123
+    
+    no ip cef  
+    ip routing  
+    ipv6 unicast-routing  
+    no ipv6 cef  
+
+    
+    
+    no ip domain-lookup
+    
+    spanning-tree mode pvst
+    
+    ip route 10.0.0.8 255.255.255.252 10.0.0.6  
+    ip route 10.0.0.12 255.255.255.252 10.0.0.2  
+    ipv6 route 2001:db8:acad:102::/64 2001:db8:acad:101::2/64  
+    ipv6 route 2001:db8:acad:103::/64 2001:db8:acad:100::2/64  
+
+    
+
+    interface GigabitEthernet1/0/1  
+    no switchport  
+    ip address 10.0.0.1 255.255.255.252  
+    ipv6 address 2001:db8:ACAD:103::100/64  
+
+    
+    
+    interface GigabitEthernet1/0/2  
+    no switchport  
+    ip address 10.0.0.5 255.255.255.252  
+    ipv6 address 2001:db8:ACAD:101::1/64  
+
+    
+    
+    interface GigabitEthernet1/0/3  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/0/4  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/0/5  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/0/6  
+    switchport mode access  
+    switchport access vlan 999  
+    
+    
+
+    interface GigabitEthernet1/0/7  
+    switchport mode access  
+    switchport access vlan 999  
+    
+    
+    
+    interface GigabitEthernet1/0/8  
+    switchport mode access  
+    switchport access vlan 999  
+    
+    
+    
+    interface GigabitEthernet1/0/9  
+    switchport mode access  
+    switchport access vlan 999  
+    
+    
+    
+    interface GigabitEthernet1/0/10  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/11  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/12  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/13  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/14  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/15  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/16  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/17  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/18  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/19  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/20  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/21  
+    switchport mode trunk  
+    switchport trunk allowed vlan 10,20,30,33,44,50  
+    switchport trunk native vlan 100  
+
+    
+    
+    interface GigabitEthernet1/0/22  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+
+    interface GigabitEthernet1/0/23  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/0/24  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/1/1  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/1/2  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/1/3  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface GigabitEthernet1/1/4  
+    switchport mode access  
+    switchport access vlan 999  
+
+    
+    
+    interface Vlan1  
+    no ip address  
+    shutdown  
+
+    
+    
+    interface Vlan10  
+    mac-address 0009.7c8b.7c01  
+    ip address 172.16.0.5 255.255.254.0  
+    ipv6 address 2001:DB8:ACAD:10::5/64  
+    standby 10 ip 172.16.1.254  
+    standby 10 priority 150  
+    standby 10 preempt  
+    standby 11 preempt  
+    standby 11 ipv6 auto-config  
+
+    
+    
+    interface Vlan20  
+    mac-address 0009.7c8b.7c02  
+    ip address 172.16.3.5 255.255.255.0  
+    ipv6 address 2001:DB8:ACAD:20::5/64  
+    standby 20 ip 172.16.4.254  
+    standby 20 priority 150  
+    standby 20 preempt  
+    standby 21 preempt  
+    standby 21 ipv6 auto-config  
+
+    
+    
+    interface Vlan30
+    mac-address 0009.7c8b.7c03
+    ip address 172.16.2.5 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:30::5/64
+    standby 30 ip 172.16.2.254
+    standby 30 priority 150
+    standby 30 preempt
+    standby 31 preempt
+    standby 31 ipv6 auto-config
+    
+    interface Vlan33
+    mac-address 0009.7c8b.7c04
+    ip address 172.16.4.5 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:33::5/64
+    
+    interface Vlan44
+    mac-address 0009.7c8b.7c05
+    ip address 172.16.5.5 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:44::5/64
+    
+    interface Vlan99
+    mac-address 0009.7c8b.7c06
+    ip address 172.16.99.5 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:99::5/64
+    standby 99 ip 172.16.99.254
+    standby 99 priority 150
+    standby 99 preempt
+    standby 98 preempt
+    standby 98 ipv6 auto-config
+    
+    interface Vlan50
+    ip address 172.16.50.1 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:50::1/64
+    standby 50 ip 172.16.50.254
+    standby 50 priority 150
+    standby 50 preempt
+    standby 51 preempt
+    standby 51 ipv6 auto-config
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    
+    line aux 0
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+
+    end
+
+== *_Multi-layer switch 2_*
+
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    hostname MLS2
+    
+    
+    enable password alma123
+    
+    
+    
+    
+    
+    
+    no ip cef
+    ip routing
+    ipv6 unicast-routing
+    
+    no ipv6 cef
+    
+    
+    
+    
+    
+    
+    ip route 10.0.0.4 255.255.255.252 10.0.0.10
+    ip route 10.0.0.0 255.255.255.252 10.0.0.14
+    ipv6 route 2001:db8:acad:101::/64 2001:db8:acad:102::2/64
+    ipv6 route 2001:db8:acad:100::/64 2001:db8:acad:103::2/64
+    
+    
+    
+    
+    
+    
+    no ip domain-lookup
+    
+    
+    spanning-tree mode pvst
+    
+    
+    
+    
+    
+    
+    interface Port-channel1
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    
+    interface GigabitEthernet1/0/1
+    no switchport
+    ip address 10.0.0.9 255.255.255.252
+    ipv6 address 2001:db8:ACAD:102::1/64
+    
+    interface GigabitEthernet1/0/2
+    no switchport
+    ip address 10.0.0.13 255.255.255.252
+    ipv6 address 2001:db8:ACAD:103::1/64
+    
+    interface GigabitEthernet1/0/3
+    channel-group 1 mode active
+    
+    interface GigabitEthernet1/0/4
+    channel-group 1 mode active
+    
+    interface GigabitEthernet1/0/5
+    channel-group 1 mode active
+    
+    interface GigabitEthernet1/0/6
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/7
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/8
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/9
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/10
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/11
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/12
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/13
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/14
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/15
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/16
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/17
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/18
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/19
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/20
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/21
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/22
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/23
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/24
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/1
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/2
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/3
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/4
+    switchport mode access
+    switchport access vlan 999
+    
+    interface Vlan1
+    no ip address
+    shutdown
+    
+    interface Vlan10
+    mac-address 0009.7c8b.7c01
+    ip address 172.16.0.6 255.255.254.0
+    ipv6 address 2001:DB8:ACAD:10::6/64
+    standby 10 ip 172.16.1.254
+    standby 10 priority 150
+    standby 10 preempt
+    standby 11 preempt
+    standby 11 ipv6 auto-config
+    
+    interface Vlan20
+    mac-address 0009.7c8b.7c02
+    ip address 172.16.3.6 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:20::6/64
+    standby 20 ip 172.16.4.254
+    standby 20 priority 150
+    standby 20 preempt
+    standby 21 preempt
+    standby 21 ipv6 auto-config
+    
+    interface Vlan30
+    mac-address 0009.7c8b.7c03
+    ip address 172.16.2.6 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:30::6/64
+    standby 30 ip 172.16.2.254
+    standby 30 priority 150
+    standby 30 preempt
+    standby 31 preempt
+    standby 31 ipv6 auto-config
+    
+    interface Vlan33
+    mac-address 0009.7c8b.7c04
+    ip address 172.16.4.6 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:33::6/64
+    
+    interface Vlan44
+    mac-address 0009.7c8b.7c05
+    ip address 172.16.5.6 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:44::6/64
+    
+    interface Vlan99
+    mac-address 0009.7c8b.7c06
+    ip address 172.16.99.6 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:99::6/64
+    standby 99 ip 172.16.99.254
+    standby 98 ipv6 auto-config
+    standby 99 priority 150
+    standby 99 preempt
+    standby 98 preempt
+    
+    interface Vlan50
+    ip address 172.16.50.6 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:99::6/64
+    standby 50 ip 172.16.50.254
+    standby 51 ipv6 auto-config
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    
+    line aux 0
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+    
+    
+    
+    end
+
+== *_Multi-layer switch 3_*
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    hostname MLS3
+    
+    
+    enable password alma123
+    
+    
+    
+    ip routing
+    ipv6 unicast-routing
+    
+    
+    ip route 10.0.0.28 255.255.255.252 10.0.0.18
+    ip route 10.0.0.24 255.255.255.252 10.0.0.22
+    ipv6 route 2001:db8:ACAD:107::/64 2001:db8:ACAD:104::2/64
+    ipv6 route 2001:db8:acad:106::/64 2001:db8:acad:105::2/64
+    
+    
+    no ip domain-lookup
+    
+    
+    
+    
+    interface Port-channel1
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    
+    interface GigabitEthernet1/0/1
+    no switchport
+    ip address 10.0.0.17 255.255.255.252
+    ipv6 address 2001:db8:ACAD:104::1/64
+    
+    interface GigabitEthernet1/0/2
+    no switchport
+    ip address 10.0.0.21 255.255.255.252
+    ipv6 address 2001:db8:ACAD:105::1/64
+    
+    interface GigabitEthernet1/0/3
+    channel-group 1 mode active
+    
+    interface GigabitEthernet1/0/4
+    channel-group 1 mode active
+    
+    interface GigabitEthernet1/0/5
+    channel-group 1 mode active
+    
+    interface GigabitEthernet1/0/6
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/7
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/8
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/9
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/11
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/12
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/13
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/14
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/15
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/16
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/17
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/18
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/19
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/20
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/21
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/22
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/23
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/24
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/1
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/2
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/3
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/4
+    switchport mode access
+    switchport access vlan 999
+    
+    interface Vlan1
+    no ip address
+    shutdown
+    
+    interface Vlan10
+    mac-address 0009.7c8b.7c01
+    ip address 172.16.0.7 255.255.254.0
+    ipv6 address 2001:DB8:ACAD:10::7/64
+    standby 12 ip 172.16.1.254
+    standby 12 priority 150
+    standby 12 preempt
+    standby 13 preempt
+    standby 13 ipv6 auto-config
+    
+    interface Vlan20
+    mac-address 0009.7c8b.7c02
+    ip address 172.16.3.7 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:20::7/64
+    standby 22 ip 172.16.4.254
+    standby 22 priority 150
+    standby 22 preempt
+    standby 23 preempt
+    standby 23 ipv6 auto-config
+    
+    interface Vlan30
+    mac-address 0009.7c8b.7c03
+    ip address 172.16.2.7 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:30::7/64
+    standby 32 ip 172.16.2.254
+    standby 32 priority 150
+    standby 32 preempt
+    standby 33 preempt
+    standby 33 ipv6 auto-config
+    
+    interface Vlan33
+    mac-address 0009.7c8b.7c04
+    ip address 172.16.4.7 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:33::7/64
+    standby 34 ip 172.16.4.254
+    standby 34 priority 150
+    standby 35 ipv6 auto-config
+    standby 34 priority 150
+    standby 34 preempt
+    standby 35 priority 150
+    standby 35 preempt
+    
+    interface Vlan44
+    mac-address 0009.7c8b.7c05
+    ip address 172.16.5.7 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:44::7/64
+    standby 44 ip 172.16.4.254
+    standby 44 priority 150
+    standby 45 ipv6 auto-config
+    standby 44 priority 150
+    standby 44 preempt
+    standby 45 priority 150
+    standby 45 preempt
+    
+    interface Vlan99
+    mac-address 0009.7c8b.7c06
+    ip address 172.16.99.7 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:99::7/64
+    standby 100 ip 172.16.99.254
+    standby 100 priority 150
+    standby 100 preempt
+    standby 101 preempt
+    standby 101 ipv6 auto-config
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    password alma123
+    login
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+    
+    
+    
+    end
+
+== *_Multi-layer switch 4_*
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    hostname MLS4
+    
+    
+    
+    
+    
+    
+    ip routing
+    ipv6 unicast-routing
+    
+    
+    
+    
+    
+    enable password alma123
+    service password-encryption
+    
+    
+    
+    
+    ip route 10.0.0.20 255.255.255.252 10.0.0.26
+    ip route 10.0.0.16 255.255.255.252 10.0.0.30
+    ipv6 route 2001:db8:ACAD:105::/64 2001:db8:ACAD:106::2/64
+    ipv6 route 2001:db8:acad:104::/64 2001:db8:acad:107::2/64
+    
+    
+    
+    
+    no ip domain-lookup
+    
+    
+    spanning-tree mode pvst
+    
+    
+    
+    
+    
+    
+    interface GigabitEthernet1/0/1
+    no switchport
+    ip address 10.0.0.25 255.255.255.252
+    ipv6 address 2001:db8:ACAD:106::1/64
+    
+    interface GigabitEthernet1/0/2
+    no switchport
+    ip address 10.0.0.29 255.255.255.252
+    ipv6 address 2001:db8:ACAD:107::1/64
+    
+    interface GigabitEthernet1/0/3
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/4
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/5
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/6
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/7
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/8
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/9
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/10
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/11
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/12
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/13
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20,30,33,44,50,99
+    switchport trunk native vlan 100
+    
+    interface GigabitEthernet1/0/14
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/15
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/16
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/17
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/18
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/19
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/20
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/21
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/22
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/23
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/0/24
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/1
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/2
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/3
+    switchport mode access
+    switchport access vlan 999
+    
+    interface GigabitEthernet1/1/4
+    switchport mode access
+    switchport access vlan 999
+    
+    interface Vlan1
+    no ip address
+    shutdown
+    
+    interface Vlan10
+    mac-address 0009.7c8b.7c02
+    ip address 172.16.0.8 255.255.254.0
+    ipv6 address 2001:DB8:ACAD:10::8/64
+    standby 12 ip 172.16.1.254
+    standby 12 priority 150
+    standby 12 preempt
+    standby 13 ipv6 autoconfig 
+    standby 13 priority 150
+    standby 13 preempt
+    
+    interface Vlan20
+    mac-address 0009.7c8b.7c03
+    ip address 172.16.3.8 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:20::8/64
+    standby 22 ip 172.16.4.254
+    standby 22 priority 150
+    standby 22 preempt
+    standby 23 ipv6 autoconfig 
+    standby 23 priority 150
+    standby 23 preempt
+    
+    interface Vlan30
+    mac-address 0009.7c8b.7c01
+    ip address 172.16.2.8 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:30::8/64
+    standby 32 ip 172.16.2.254
+    standby 32 priority 150
+    standby 32 preempt
+    standby 33 ipv6 autoconfig 
+    standby 33 priority 150
+    standby 33 preempt
+    
+    interface Vlan33
+    mac-address 0009.7c8b.7c04
+    ip address 172.16.4.8 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:33::8/64
+    standby 34 ip 172.16.4.254
+    standby 34 priority 150
+    standby 35 ipv6 auto-config
+    standby 34 priority 150
+    standby 34 preempt
+    standby 35 priority 150
+    standby 35 preempt
+    
+    interface Vlan44
+    mac-address 0009.7c8b.7c05
+    ip address 172.16.5.8 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:44::8/64
+    standby 44 ip 172.16.4.254
+    standby 44 priority 150
+    standby 45 ipv6 auto-config
+    standby 44 priority 150
+    standby 44 preempt
+    standby 45 priority 150
+    standby 45 preempt
+    
+    interface Vlan99
+    ip address 172.16.99.8 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:99::8/64
+    standby 99 ip 172.16.99.254
+    standby 99 priority 150
+    standby 99 preempt
+    standby 98 ipv6 autoconfig 
+    standby 98 priority 150
+    standby 98 preempt
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    password alma123
+    login
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+    
+    
+    
+    end
+    
+== *_Router 1_*
+
+    hostname R1
+    
+    
+    
+    enable password alma123
+    service password-encryption
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ipv6 unicast-routing
+    
+    
+    
+    
+    spanning-tree mode pvst
+    
+    
+    
+    ip route 10.0.0.4 255.255.255.252 10.0.0.1
+    ip route 10.0.0.8 255.255.255.252 10.0.0.13
+    ipv6 route 2001:db8:acad:101::/64 2001:db8:acad:100::1/64
+    ipv6 route 2001:db8:acad:102::/64 2001:db8:acad:103::1/64
+    
+    
+    
+    
+    
+    interface GigabitEthernet0/1
+    no shutdown
+    ip address 10.0.0.2 255.255.255.252
+    ipv6 address 2001:db8:ACAD:100::2/64
+    
+    interface GigabitEthernet0/2
+    no shutdown
+    ip address 10.0.0.14 255.255.255.252
+    ipv6 address 2001:db8:ACAD:103::2/64
+    
+    
+    interface Vlan1
+    no ip address
+    shutdown
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    password alma123
+    login
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+    
+    
+    end
+    
+== *_Router 2_*
+
+    hostname R2
+    
+    
+    
+    enable password alma123
+    service password-encryption
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ipv6 unicast-routing
+    
+    
+    
+    
+    spanning-tree mode pvst
+    
+    
+    
+    ip route 10.0.0.12 255.255.255.252 10.0.0.9
+    ip route 10.0.0.0 255.255.255.252 10.0.0.5
+    ipv6 route 2001:db8:ACAD:103::/64 2001:db8:acad:102::1/64
+    ipv6 route 2001:db8:acad:100::/64 2001:db8:acad:101::1/64
+    
+    
+    
+    
+    interface GigabitEthernet0/1
+    no shutdown
+    ip address 10.0.0.10 255.255.255.252
+    ipv6 address 2001:db8:ACAD:102::2/64
+    
+    interface GigabitEthernet0/2
+    no shutdown
+    ip address 10.0.0.6 255.255.255.252
+    ipv6 address 2001:db8:ACAD:101::2/64
+    
+    interface Vlan1
+    no ip address
+    shutdown
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    password alma123
+    login
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+    
+    
+    end
+    
+== *_Router 3_*
+
+    hostname R3
+    
+    
+    
+    enable password alma123
+    service password-encryption
+    
+    
+    
+    
+    
+    
+    
+    ipv6 unicast-routing
+    
+    
+    no ip domain-lookup
+    
+    
+    spanning-tree mode pvst
+    
+    
+    
+    ip route 10.0.0.20 255.255.255.252 10.0.0.17
+    ip route 10.0.0.24 255.255.255.252 10.0.0.29
+    ipv6 route 2001:db8:ACAD:105::/64 2001:db8:ACAD:104::1/64
+    ipv6 route 2001:db8:acad:106::/64 2001:db8:acad:107::1/64
+    
+    
+    
+    interface GigabitEthernet0/1
+    no shutdown
+    ip address 10.0.0.18 255.255.255.252
+    ipv6 address 2001:db8:ACAD:104::2/64
+    
+    interface GigabitEthernet0/2
+    no shutdown
+    ip address 10.0.0.30 255.255.255.252
+    ipv6 address 2001:db8:ACAD:107::2/64
+    
+    
+    interface Vlan1
+    no ip address
+    shutdown
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    password alma123
+    login
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+    
+    
+    end
+    
+== *_Router 4_*
+
+    hostname R4
+    
+    
+    
+    enable password alma123
+    service password-encryption
+    
+    
+    
+    no ip domain-lookup
+    
+    
+    
+    ip route 10.0.0.28 255.255.255.252 10.0.0.25
+    ip route 10.0.0.16 255.255.255.252 10.0.0.21
+    ipv6 route 2001:db8:ACAD:104::/64 2001:db8:ACAD:105::1/64
+    ipv6 route 2001:db8:acad:107::/64 2001:db8:acad:106::1/64
+    
+    
+    
+    interface GigabitEthernet0/1
+    no shutdown
+    ip address 10.0.0.26 255.255.255.252
+    ipv6 address 2001:db8:ACAD:106::2/64
+    
+    interface GigabitEthernet0/2
+    no shutdown
+    ip address 10.0.0.22 255.255.255.252
+    ipv6 address 2001:db8:ACAD:105::2/64
+    
+    interface Vlan1
+    no ip address
+    shutdown
+    
+    ip classless
+    
+    ip flow-export version 9
+    
+    
+    
+    
+    
+    
+    
+    line con 0
+    password alma123
+    login
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+    
+    
+    end
+    
+== *_Switch 1_*
+
+    hostname S1
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-2
+    swithcport mode access
+    swithcport access vlan 50
+    interface range FastEthernet0/3-4
+    swithcport mode access 
+    swithcport access vlan 20 
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-4
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.9
+    ipv6 address 2001:db8:acad:99::9/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 2_*
+
+    hostname S2
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-15
+    swithcport mode access
+    swithcport access vlan 30
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-15
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.10
+    ipv6 address 2001:db8:acad:99::10/64
+    
+    ip default-gateway 192.168.99.254
+    
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 3_*
+
+    hostname S3
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.11
+    ipv6 address 2001:db8:acad:99::11/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 4_*
+
+    hostname S4
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.11
+    ipv6 address 2001:db8:acad:99::12/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 5_*
+
+    hostname S5
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.11
+    ipv6 address 2001:db8:acad:99::13/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 6_*
+
+    hostname S6
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.11
+    ipv6 address 2001:db8:acad:99::14/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 7_*
+
+    hostname S7
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.15
+    ipv6 address 2001:db8:acad:99::15/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 8_*
+
+    hostname S8
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.16
+    ipv6 address 2001:db8:acad:99::16/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 9_*
+
+    hostname S9
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.17
+    ipv6 address 2001:db8:acad:99::17/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    Switch10
+    hostname S10
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.18
+    ipv6 address 2001:db8:acad:99::18/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 11_*
+
+    hostname S11
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.19
+    ipv6 address 2001:db8:acad:99::19/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 12_*
+
+    hostname S12
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-20
+    swithcport mode access
+    swithcport access vlan 10
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-20
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.20
+    ipv6 address 2001:db8:acad:99::20/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 13_*
+
+    hostname S13
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-9
+    swithcport mode access
+    swithcport access vlan 30
+    interface range FastEthernet0/10-15
+    swithcport mode access 
+    swithcport access vlan 20 
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-15
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.21
+    ipv6 address 2001:db8:acad:99::21/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 14_*
+
+    hostname S14
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-5
+    swithcport mode access
+    swithcport access vlan 20
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-5
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.22
+    ipv6 address 2001:db8:acad:99::22/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 15_*
+
+    hostname S15
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-5
+    swithcport mode access
+    swithcport access vlan 20
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1-5
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.23
+    ipv6 address 2001:db8:acad:99::23/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 16_*
+
+    hostname S16
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1
+    swithcport mode access
+    swithcport access vlan 33
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.20
+    ipv6 address 2001:db8:acad:99::20/64
+    
+    ip default-gateway 192.168.99.254
+    
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    
+== *_Switch 17_*
+
+    hostname S17
+    
+    vlan 999
+    name SINKHOLE
+    vlan 100
+    NATIVE
+    name NATIVE
+    vlan 10
+    name GEPTERMEK
+    vlan 20
+    name MARADEK
+    vlan 30
+    name TANARIK
+    vlan 33 
+    name TREFORT_wi-fi
+    vlan 44
+    name GUEST_wi-fi
+    vlan 50
+    name SERVER
+    VLAN 99
+    name MANAGEMENT
+    
+    enable password alma123
+    service password-encryption
+    
+    sdm prefer dual-ipv4-and-ipv6 default
+    
+    interface range FastEthernet0/1-2
+    swithcport mode access
+    swithcport access vlan 44
+    
+    interface range Gigabitethernet0/1-2
+    swithcport mode trunk
+    swithcport trunk allowed vlan 10,20,30,33,44,99
+    swithcport trunk native vlan 100
+    
+    int range FastEthernet0/1
+    swithcport port-security maximum 1
+    swithcport port-security mac-address sticky
+    swithcport port-security violation shutdown
+    swithcport port-security aging time 120
+    
+    interface vlan 99
+    ip address 192.168.99.21
+    ipv6 address 2001:db8:acad:99::21/64
+    
+    ip default-gateway 192.168.99.254
+    
+
+    
+    
+    line vty 0 4
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+    line vty 5 15
+    password alma123
+    login
+    transport input ssh
+    transport output ssh
+
