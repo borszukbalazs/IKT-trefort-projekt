@@ -1,9 +1,10 @@
 
 = Configs
 
-*_Multi-layer switch 1_*
+== *_Multi-layer switch 1_*
 
-    vlan 999 
+==== vlan 999 
+
     name SINKHOLE
 
 
@@ -273,15 +274,15 @@
 
     
     
-        interface Vlan30
-        mac-address 0009.7c8b.7c03
-        ip address 172.16.2.5 255.255.255.0
-        ipv6 address 2001:DB8:ACAD:30::5/64
-        standby 30 ip 172.16.2.254
-        standby 30 priority 150
-        standby 30 preempt
-        standby 31 preempt
-        standby 31 ipv6 auto-config
+    interface Vlan30
+    mac-address 0009.7c8b.7c03
+    ip address 172.16.2.5 255.255.255.0
+    ipv6 address 2001:DB8:ACAD:30::5/64
+    standby 30 ip 172.16.2.254
+    standby 30 priority 150
+    standby 30 preempt
+    standby 31 preempt
+    standby 31 ipv6 auto-config
     
     interface Vlan33
     mac-address 0009.7c8b.7c04
@@ -339,7 +340,7 @@
 
     end
 
-*_Multi-layer switch 2_*
+== *_Multi-layer switch 2_*
 
     vlan 999
     name SINKHOLE
@@ -618,7 +619,8 @@
     
     
     end
-*_Multi-layer switch 3_*
+
+== *_Multi-layer switch 3_*
     vlan 999
     name SINKHOLE
     vlan 100
@@ -871,7 +873,8 @@
     
     
     end
-*_Multi-layer switch 4_*
+
+== *_Multi-layer switch 4_*
     vlan 999
     name SINKHOLE
     vlan 100
@@ -1149,7 +1152,7 @@
     
     end
     
-*_Router 1_*
+== *_Router 1_*
 
     hostname R1
     
@@ -1229,7 +1232,7 @@
     
     end
     
-*_Router 2_*
+== *_Router 2_*
 
     hostname R2
     
@@ -1307,7 +1310,7 @@
     
     end
     
-*_Router 3_*
+== *_Router 3_*
 
     hostname R3
     
@@ -1384,7 +1387,7 @@
     
     end
     
-*_Router 4_*
+== *_Router 4_*
 
     hostname R4
     
@@ -1450,7 +1453,7 @@
     
     end
     
-*_Switch 1_*
+== *_Switch 1_*
 
     hostname S1
     
@@ -1517,7 +1520,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 2_*
+== *_Switch 2_*
 
     hostname S2
     
@@ -1580,7 +1583,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 3_*
+== *_Switch 3_*
 
     hostname S3
     
@@ -1644,7 +1647,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 4_*
+== *_Switch 4_*
 
     hostname S4
     
@@ -1708,7 +1711,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 5_*
+== *_Switch 5_*
 
     hostname S5
     
@@ -1772,7 +1775,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 6_*
+== *_Switch 6_*
 
     hostname S6
     
@@ -1836,7 +1839,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 7_*
+== *_Switch 7_*
 
     hostname S7
     
@@ -1900,7 +1903,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 8_*
+== *_Switch 8_*
 
     hostname S8
     
@@ -1964,7 +1967,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 9_*
+== *_Switch 9_*
 
     hostname S9
     
@@ -2090,7 +2093,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 11_*
+== *_Switch 11_*
 
     hostname S11
     
@@ -2154,7 +2157,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 12_*
+== *_Switch 12_*
 
     hostname S12
     
@@ -2218,7 +2221,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 13_*
+== *_Switch 13_*
 
     hostname S13
     
@@ -2285,7 +2288,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 14_*
+== *_Switch 14_*
 
     hostname S14
     
@@ -2348,8 +2351,8 @@
     login
     transport input ssh
     transport output ssh
-    
-*_Switch 15_*
+
+== *_Switch 15_*
 
     hostname S15
     
@@ -2412,8 +2415,8 @@
     login
     transport input ssh
     transport output ssh
-    
-*_Switch 16_*
+
+== *_Switch 16_*
 
     hostname S16
     
@@ -2476,7 +2479,7 @@
     transport input ssh
     transport output ssh
     
-*_Switch 17_*
+== *_Switch 17_*
 
     hostname S17
     
