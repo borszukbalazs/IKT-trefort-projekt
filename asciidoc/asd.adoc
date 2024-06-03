@@ -516,18 +516,19 @@ VLAN Interfaces
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Access
-*	VLAN: 50 (SERVER)
-*	Ports 0/3-4:
-*	Mode: Access
-*	VLAN: 20 (MARADEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Access
+**	VLAN: 50 (SERVER)
+**	Ports 0/3-4:
+**	Mode: Access
+**	VLAN: 20 (MARADEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -540,8 +541,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.9/24
-*	IPv6 Address: 2001:db8:acad:99::9/64
+**	IP Address: 192.168.99.9/24
+**	IPv6 Address: 2001:db8:acad:99::9/64
 
 === 6. Default Gateway
 
@@ -597,15 +598,16 @@ Interfaces:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-15:
-*	Mode: Access
-*	VLAN: 30 (TANARIK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-15:
+**	Mode: Access
+**	VLAN: 30 (TANARIK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -618,8 +620,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.10/24
-*	IPv6 Address: 2001:db8:acad:99::10/64
+**	IP Address: 192.168.99.10/24
+**	IPv6 Address: 2001:db8:acad:99::10/64
 
 === 6. Default Gateway
 
@@ -672,15 +674,16 @@ Interfaces:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -693,8 +696,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.11/24
-*	IPv6 Address: 2001:db8:acad:99::11/64
+**	IP Address: 192.168.99.11/24
+**	IPv6 Address: 2001:db8:acad:99::11/64
 
 === 6. Default Gateway
 
@@ -746,15 +749,16 @@ Interfaces:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -767,8 +771,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.11/24
-*	IPv6 Address: 2001:db8:acad:99::12/64
+**	IP Address: 192.168.99.11/24
+**	IPv6 Address: 2001:db8:acad:99::12/64
 
 === 6. Default Gateway
 
@@ -821,15 +825,16 @@ Interfaces:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -842,8 +847,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.11/24
-*	IPv6 Address: 2001:db8:acad:99::13/64
+**	IP Address: 192.168.99.11/24
+**	IPv6 Address: 2001:db8:acad:99::13/64
 
 === 6. Default Gateway
 
@@ -881,15 +886,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -902,8 +908,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.11/24
-*	IPv6 Address: 2001:db8:acad:99::14/64
+**	IP Address: 192.168.99.11/24
+**	IPv6 Address: 2001:db8:acad:99::14/64
 
 === 6. Default Gateway
 
@@ -940,15 +946,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -961,8 +968,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.15/24
-*	IPv6 Address: 2001:db8:acad:99::15/64
+**	IP Address: 192.168.99.15/24
+**	IPv6 Address: 2001:db8:acad:99::15/64
 
 === 6. Default Gateway
 
@@ -1000,15 +1007,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1021,8 +1029,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.16/24
-*	IPv6 Address: 2001:db8:acad:99::16/64
+**	IP Address: 192.168.99.16/24
+**	IPv6 Address: 2001:db8:acad:99::16/64
 
 === 6. Default Gateway
 
@@ -1060,15 +1068,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1081,8 +1090,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.17/24
-*	IPv6 Address: 2001:db8:acad:99::17/64
+**	IP Address: 192.168.99.17/24
+**	IPv6 Address: 2001:db8:acad:99::17/64
 
 === 6. Default Gateway
 
@@ -1120,15 +1129,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1141,8 +1151,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.18/24
-*	IPv6 Address: 2001:db8:acad:99::18/64
+**	IP Address: 192.168.99.18/24
+**	IPv6 Address: 2001:db8:acad:99::18/64
 
 === 6. Default Gateway
 
@@ -1180,15 +1190,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1201,8 +1212,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.19/24
-*	IPv6 Address: 2001:db8:acad:99::19/64
+**	IP Address: 192.168.99.19/24
+**	IPv6 Address: 2001:db8:acad:99::19/64
 
 === 6. Default Gateway
 
@@ -1240,15 +1251,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-20:
-*	Mode: Access
-*	VLAN: 10 (GEPTERMEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-20:
+**	Mode: Access
+**	VLAN: 10 (GEPTERMEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1261,8 +1273,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.20/24
-*	IPv6 Address: 2001:db8:acad:99::20/64
+**	IP Address: 192.168.99.20/24
+**	IPv6 Address: 2001:db8:acad:99::20/64
 
 === 6. Default Gateway
 
@@ -1300,18 +1312,19 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-9:
-*	Mode: Access
-*	VLAN: 30 (TANARIK)
-*	Ports 0/10-15:
-*	Mode: Access
-*	VLAN: 20 (MARADEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-9:
+**	Mode: Access
+**	VLAN: 30 (TANARIK)
+**	Ports 0/10-15:
+**	Mode: Access
+**	VLAN: 20 (MARADEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1325,7 +1338,7 @@ GigabitEthernet Ports:
 
 *	*VLAN 99:*
 *	IP Address: 192.168.99.21/24
-*	IPv6 Address: 2001:db8:acad:99::21/64
+**	IPv6 Address: 2001:db8:acad:99::21/64
 
 === 6. Default Gateway
 
@@ -1363,29 +1376,30 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-5:
-*	Mode: Access
-*	VLAN: 20 (MARADEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-5:
+**	Mode: Access
+**	VLAN: 20 (MARADEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
 *	Ports 0/1-5:
-*	Maximum MAC Addresses: 1
-*	Sticky MAC Address Assignment
-*	Violation: Shutdown
-*	Aging Time: 120 minutes
+**	Maximum MAC Addresses: 1
+**	Sticky MAC Address Assignment
+**	Violation: Shutdown
+**	Aging Time: 120 minutes
 
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.22/24
-*	IPv6 Address: 2001:db8:acad:99::22/64
+**	IP Address: 192.168.99.22/24
+**	IPv6 Address: 2001:db8:acad:99::22/64
 
 === 6. Default Gateway
 
@@ -1423,29 +1437,30 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-5:
-*	Mode: Access
-*	VLAN: 20 (MARADEK)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-5:
+**	Mode: Access
+**	VLAN: 20 (MARADEK)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
 *	Ports 0/1-5:
-*	Maximum MAC Addresses: 1
-*	Sticky MAC Address Assignment
-*	Violation: Shutdown
-*	Aging Time: 120 minutes
+**	Maximum MAC Addresses: 1
+**	Sticky MAC Address Assignment
+**	Violation: Shutdown
+**	Aging Time: 120 minutes
 
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.23/24
-*	IPv6 Address: 2001:db8:acad:99::23/64
+**	IP Address: 192.168.99.23/24
+**	IPv6 Address: 2001:db8:acad:99::23/64
 
 === 6. Default Gateway
 
@@ -1483,15 +1498,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Port 0/1:
-*	Mode: Access
-*	VLAN: 33 (TREFORT_wi-fi)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Port 0/1:
+**	Mode: Access
+**	VLAN: 33 (TREFORT_wi-fi)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1504,8 +1520,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.20/24
-*	IPv6 Address: 2001:db8:acad:99::20/64
+**	IP Address: 192.168.99.20/24
+**	IPv6 Address: 2001:db8:acad:99::20/64
 
 === 6. Default Gateway
 
@@ -1541,15 +1557,16 @@ GigabitEthernet Ports:
 === 3. Port Configuration
 
 
-FastEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Access
-*	VLAN: 44 (GUEST_wi-fi)
-GigabitEthernet Ports:
-*	Ports 0/1-2:
-*	Mode: Trunk
-*	Allowed VLANs: 10, 20, 30, 33, 44, 99
-*	Native VLAN: 100 (NATIVE)
+* FastEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Access
+**	VLAN: 44 (GUEST_wi-fi)
+
+* GigabitEthernet Ports:
+**	Ports 0/1-2:
+**	Mode: Trunk
+**	Allowed VLANs: 10, 20, 30, 33, 44, 99
+**	Native VLAN: 100 (NATIVE)
 
 === 4. Port Security
 
@@ -1562,8 +1579,8 @@ GigabitEthernet Ports:
 === 5. VLAN Interface Configuration
 
 *	*VLAN 99:*
-*	IP Address: 192.168.99.21/24
-*	IPv6 Address: 2001:db8:acad:99::21/64
+**	IP Address: 192.168.99.21/24
+**	IPv6 Address: 2001:db8:acad:99::21/64
 
 === 6. Default Gateway
 
@@ -1604,7 +1621,7 @@ GigabitEthernet Ports:
 === 3. Interface Configuration
 
 
-*	GigabitEthernet0/1:
+*   GigabitEthernet0/1:
 *	IP Address: 10.0.0.2/30
 *	IPv6 Address: 2001:db8:ACAD:100::2/64
 *	GigabitEthernet0/2:
