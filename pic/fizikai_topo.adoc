@@ -1,0 +1,3 @@
+= Fizikai topologia
+
+image::fizikai_top.drawio.svg[]
