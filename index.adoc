@@ -62,7 +62,7 @@
 *	Allowed VLANs: 10,20,30,33,44,50.
 *	Native VLAN: 100.
 
-==== 
+
 ==== VLAN Interfaces
 
 
