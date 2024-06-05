@@ -1,3 +1,0 @@
-= Logikai topologia
-
-image::logikai.drawio.svg[]
